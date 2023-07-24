@@ -1,1 +1,9 @@
-{}
+{
+  "function": {
+    "requestMetars": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  }
+}

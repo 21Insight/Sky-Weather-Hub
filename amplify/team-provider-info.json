@@ -10,6 +10,11 @@
       "StackName": "amplify-skyweatherhub-dev-25912",
       "StackId": "arn:aws:cloudformation:us-east-1:688560848957:stack/amplify-skyweatherhub-dev-25912/fb64c410-29f7-11ee-9006-0e1a8277c24f",
       "AmplifyAppId": "d1j4ftbvoswl3m"
+    },
+    "categories": {
+      "function": {
+        "requestMetars": {}
+      }
     }
   }
 }
