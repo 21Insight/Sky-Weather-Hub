@@ -7,6 +7,7 @@ See the License for the specific language governing permissions and limitations 
 */
 
 const express = require("express");
+const axios = require("axios");
 const bodyParser = require("body-parser");
 const awsServerlessExpressMiddleware = require("aws-serverless-express/middleware");
 
@@ -22,20 +23,25 @@ app.use(function (req, res, next) {
   next();
 });
 
-// Get all metars
+// Get all metars for a country using external API
 
 app.get("/metars/:country", function (req, res) {
-  var country = req.query.country;
-  app.get(
+  const country = req.params.country;
+  const url =
     "https://beta.aviationweather.gov/cgi-bin/data/metar.php?ids=" +
-      country +
-      "&format=json",
-    function (error, response, body) {
-      if (!error && response.statusCode == 200) {
-        res.json({ success: "get call succeed!", url: req.url, body: body });
-      }
-    }
-  );
+    country +
+    "&format=json";
+
+  axios
+    .get(url)
+    .then((response) => {
+      const metars = response.data;
+      res.json(metars);
+    })
+    .catch((error) => {
+      console.log(error);
+      res.status(500).send("Error retrieving metars");
+    });
 });
 
 app.listen(3000, function () {
