@@ -17,6 +17,10 @@
           "deploymentBucketName": "amplify-skyweatherhub-dev-25912-deployment",
           "s3Key": "amplify-builds/requestMetars-534c4d42367674366571-build.zip"
         }
+      },
+      "api": {
+        "SkyWeatherHub": {},
+        "requestMetars": {}
       }
     }
   }

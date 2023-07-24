@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/metars/{country}": {
+      "name": "/metars/{country}",
+      "lambdaFunction": "requestMetars",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

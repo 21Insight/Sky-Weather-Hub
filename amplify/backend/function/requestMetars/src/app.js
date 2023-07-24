@@ -26,7 +26,7 @@ app.use(function (req, res, next) {
 
 app.get("/metars/:country", function (req, res) {
   var country = req.query.country;
-  app.request(
+  app.get(
     "https://beta.aviationweather.gov/cgi-bin/data/metar.php?ids=" +
       country +
       "&format=json",
