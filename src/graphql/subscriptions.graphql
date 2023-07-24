@@ -1,0 +1,46 @@
+# this is an auto generated file. This will be overwritten
+
+subscription OnCreateAirports($filter: ModelSubscriptionAirportsFilterInput) {
+  onCreateAirports(filter: $filter) {
+    id
+    icao
+    iata
+    country
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+subscription OnUpdateAirports($filter: ModelSubscriptionAirportsFilterInput) {
+  onUpdateAirports(filter: $filter) {
+    id
+    icao
+    iata
+    country
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+subscription OnDeleteAirports($filter: ModelSubscriptionAirportsFilterInput) {
+  onDeleteAirports(filter: $filter) {
+    id
+    icao
+    iata
+    country
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}

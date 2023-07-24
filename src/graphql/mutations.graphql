@@ -1,0 +1,55 @@
+# this is an auto generated file. This will be overwritten
+
+mutation CreateAirports(
+  $input: CreateAirportsInput!
+  $condition: ModelAirportsConditionInput
+) {
+  createAirports(input: $input, condition: $condition) {
+    id
+    icao
+    iata
+    country
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+mutation UpdateAirports(
+  $input: UpdateAirportsInput!
+  $condition: ModelAirportsConditionInput
+) {
+  updateAirports(input: $input, condition: $condition) {
+    id
+    icao
+    iata
+    country
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+mutation DeleteAirports(
+  $input: DeleteAirportsInput!
+  $condition: ModelAirportsConditionInput
+) {
+  deleteAirports(input: $input, condition: $condition) {
+    id
+    icao
+    iata
+    country
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
