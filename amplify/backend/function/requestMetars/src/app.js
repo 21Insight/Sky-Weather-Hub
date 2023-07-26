@@ -25,8 +25,8 @@ app.use(function (req, res, next) {
 
 // Return a health check to confirm the app is running
 
-app.get("/health", function (res) {
-  res.json({ message: "requestMetars it's OK" });
+app.get("/health", function (req, res) {
+  res.send("The app is healthy");
 });
 
 // Get all metars for a country using external API
