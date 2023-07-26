@@ -15,7 +15,7 @@
       "function": {
         "requestMetars": {
           "deploymentBucketName": "amplify-skyweatherhub-dev-25912-deployment",
-          "s3Key": "amplify-builds/requestMetars-59767443774e6c4e394a-build.zip"
+          "s3Key": "amplify-builds/requestMetars-6a4a6b6c37792b4e5643-build.zip"
         }
       },
       "api": {
@@ -40,7 +40,7 @@
       "function": {
         "requestMetars": {
           "deploymentBucketName": "amplify-skyweatherhub-pdn-221905-deployment",
-          "s3Key": "amplify-builds/requestMetars-686e55457a74586d7639-build.zip"
+          "s3Key": "amplify-builds/requestMetars-6a4a6b6c37792b4e5643-build.zip"
         }
       },
       "api": {

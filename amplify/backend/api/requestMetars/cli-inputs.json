@@ -1,8 +1,15 @@
 {
   "version": 1,
   "paths": {
-    "/metars/{country}": {
-      "name": "/metars/{country}",
+    "/findByCountry/{country}": {
+      "name": "/findByCountry/{country}",
+      "lambdaFunction": "requestMetars",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/health": {
+      "name": "/health",
       "lambdaFunction": "requestMetars",
       "permissions": {
         "setting": "open"

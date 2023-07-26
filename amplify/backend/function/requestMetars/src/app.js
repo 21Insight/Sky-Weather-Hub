@@ -25,7 +25,7 @@ app.use(function (req, res, next) {
 
 // Return a health check to confirm the app is running
 
-app.get("/", function (res) {
+app.get("/health", function (res) {
   res.json({ message: "requestMetars it's OK" });
 });
 
