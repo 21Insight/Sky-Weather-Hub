@@ -23,9 +23,15 @@ app.use(function (req, res, next) {
   next();
 });
 
+// Return a health check to confirm the app is running
+
+app.get("/", function (res) {
+  res.json({ message: "requestMetars it's OK" });
+});
+
 // Get all metars for a country using external API
 
-app.get("/metars/:country", function (req, res) {
+app.get("/findByCountry/:country", function (req, res) {
   const country = req.params.country;
 
   const url =
