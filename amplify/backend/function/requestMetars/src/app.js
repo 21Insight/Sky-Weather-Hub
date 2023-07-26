@@ -27,6 +27,7 @@ app.use(function (req, res, next) {
 
 app.get("/metars/:country", function (req, res) {
   const country = req.params.country;
+
   const url =
     "https://beta.aviationweather.gov/cgi-bin/data/metar.php?ids=" +
     country +
@@ -43,6 +44,8 @@ app.get("/metars/:country", function (req, res) {
       res.status(500).send("Error retrieving metars");
     });
 });
+
+// Start the app
 
 app.listen(3000, function () {
   console.log("App started");
