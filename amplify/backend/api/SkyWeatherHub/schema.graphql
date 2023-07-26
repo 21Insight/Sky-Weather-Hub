@@ -1,6 +1,0 @@
-type Airports @model @auth(rules: [{allow: public}]) {
-  id: ID!
-  ICAO: String!
-  IATA: String
-  Country: String!
-}

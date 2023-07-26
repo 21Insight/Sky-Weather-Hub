@@ -1,7 +1,0 @@
-{
-  "httpMethod": "GET",
-  "path": "/metars/SKBO",
-  "headers": {
-    "Content-Type": "application/json"
-  }
-}
