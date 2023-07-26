@@ -23,5 +23,30 @@
         "requestMetars": {}
       }
     }
+  },
+  "pdn": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-skyweatherhub-pdn-221905-authRole",
+      "UnauthRoleArn": "arn:aws:iam::688560848957:role/amplify-skyweatherhub-pdn-221905-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::688560848957:role/amplify-skyweatherhub-pdn-221905-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-skyweatherhub-pdn-221905-deployment",
+      "UnauthRoleName": "amplify-skyweatherhub-pdn-221905-unauthRole",
+      "StackName": "amplify-skyweatherhub-pdn-221905",
+      "StackId": "arn:aws:cloudformation:us-east-1:688560848957:stack/amplify-skyweatherhub-pdn-221905/3fd822b0-2b63-11ee-8e77-0eb961297899",
+      "AmplifyAppId": "d1j4ftbvoswl3m"
+    },
+    "categories": {
+      "function": {
+        "requestMetars": {
+          "deploymentBucketName": "amplify-skyweatherhub-pdn-221905-deployment",
+          "s3Key": "amplify-builds/requestMetars-686e55457a74586d7639-build.zip"
+        }
+      },
+      "api": {
+        "SkyWeatherHub": {},
+        "requestMetars": {}
+      }
+    }
   }
 }
